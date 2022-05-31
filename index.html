@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wih=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Cosmos of Mierley</title>
+</head>
+
+<body>
+    <div id="cursor">
+        <div class="light-ray"> </div>
+        <span class="light">🔦</span>
+
+    </div>
+
+    <div id = "link_container">
+        
+        <p id = "title_block">Social media</p>
+
+
+        <div class="photo"> <img src="/I_green-removebg-preview.png"></div>
+        <div class="box"><a href = https://github.com/Mierley><div class = "white_star git" id="start"><img class = "icon" src="/git.png"></div></a></div>
+        <div class="box"><a href = https://github.com/Mierley><div class = "white_star instagram" id ="end"><img class = "icon" src="/instagram.png"></div></a></div>
+        <div class="box"><a href = https://github.com/Mierley><div class = "white_star telegram"><img class = "icon" src="/telegram.png"></div></a></div>
+        <div class="box"><a href = https://github.com/Mierley><div class = "white_star vkontakte"><img class = "icon" src="/free-icon-vk-725349.png"></div></a></div>
+        
+
+    </div>
+
+</body>
+
+</html>
+
+
+<script>
+    var cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', function(e)
+    {
+        var x = e.clientX;
+        var y = e.clientY;
+        cursor.style.left = x + "px";
+        cursor.style.top= y + "px";
+    }) 
+</script>
+

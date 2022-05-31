@@ -1,0 +1,118 @@
+*{
+    cursor: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body
+{
+    background-image: url(/pexels-martin-banov-4753682.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cursor
+{
+    z-index: 10;
+    position: fixed;
+    transition: 0.1s;
+    pointer-events: none;
+}
+
+.light-ray
+{
+    box-shadow: 0 0 55px 52px #fff;
+    opacity: 70%;
+    background-color: cornsilk;
+    height: 1px;
+    width: 1px;
+    border-radius: 50%;
+}
+
+.light
+{
+    transform: translate(-50%, -50%);
+}
+
+#title_block
+{
+    position: absolute;
+    color: aquamarine;
+    display: flex;
+}
+
+#link_container
+{
+    box-shadow: 0 0 30px 30px black;
+    padding: 10px;
+    margin-top:5%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    width: 420px;
+    height: 600px;
+    background-color: black;
+    text-align: center;
+}
+
+.box
+{
+    margin: 10px 0;
+}
+
+.white_star
+{
+    z-index: 8;
+    box-shadow: 0 0 55px 52px #fff;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    width: 55px;
+    background-color: aliceblue;
+    clip-path: polygon(50% 0%, 68% 26%, 98% 35%, 80% 61%, 79% 91%, 51% 83%, 21% 91%, 21% 61%, 2% 35%, 33% 27%);
+}
+
+.white_star:hover 
+{
+    background-color: gold;
+    transform: scale(2);
+}
+
+.icon
+{   
+    width: 25px;
+    height: 25px;
+    margin:auto;
+    display: block;
+}
+
+.git
+{
+    top: 60px;
+    left: 45px;
+}
+
+.vkontakte
+{
+    top: 220px;
+    left: 95px;
+}
+
+.instagram
+{
+    top: 420px;
+    left: 15px;
+}
+
+.telegram
+{
+    top: 320px;
+    left: 375px;
+}
