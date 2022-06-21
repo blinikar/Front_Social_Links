@@ -1,5 +1,5 @@
 *{
-    cursor: url(/Images/iconmonstr-flashlight-3.svg), auto;
+    cursor: url(/images/iconmonstr-flashlight-3.svg), auto;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
 
 body
 {
-    background-image: url(/Images/pexels-martin-banov-4753682.jpg);
+    background-image: url(/images/pexels-martin-banov-4753682.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
