@@ -5,67 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="wih=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="part2.css">
+    <link rel="stylesheet" href="/Styles/dog-api.css">
+    <link rel="stylesheet" href="/Styles/icon-star.css">
     <title>The Cosmos of Mierley</title>
 </head>
 
 <body>
     <div id="cursor">
         <div class="light-ray"> </div>
-        <span class="light">🔦</span>
     </div>
+    <script src="Scripts/light-moving.js"></script>
+    <script src="Scripts/light-moving.js"></script>
 
-    <div class = "friend_layout container">
-
+    <div class = "friend_layout dog_container">
         <div id = "dog_1", class = "dog_place">
             <p>Click to see my friend</p>
         </div>
-
     </div>
+    <script src = "Scripts/dog-api.js"></script>
 
-    <div class = "container", id = "link_container">
-        
+    <div class = "dog_container", id = "link_container">
         <p id = "title_block">Social media</p>
-
-        <div class="photo"> <img src="/I_green-removebg-preview.png"></div>
-        <div class="box"><a href = https://github.com/Mierley><div class = "white_star git" id="start"><img class = "icon" src="/git.png"></div></a></div>
-        <div class="box"><a href = https://github.com/Mierley><div class = "white_star instagram" id ="end"><img class = "icon" src="/instagram.png"></div></a></div>
-        <div class="box"><a href = https://github.com/Mierley><div class = "white_star telegram"><img class = "icon" src="/telegram.png"></div></a></div>
-        <div class="box"><a href = https://github.com/Mierley><div class = "white_star vkontakte"><img class = "icon" src="/free-icon-vk-725349.png"></div></a></div>
+        <div class="photo"> <img src="/Images/I_green-removebg-preview.png"></div>
+        <div class="box"><a href = https://github.com/Mierley><div class = "white_star git" id="start"><img class = "icon" src="/Images/git.png"></div></a></div>
+        <div class="box"><a href = https://github.com/Mierley><div class = "white_star instagram" id ="end"><img class = "icon" src="/Images/instagram.png"></div></a></div>
+        <div class="box"><a href = https://github.com/Mierley><div class = "white_star telegram"><img class = "icon" src="/Images/telegram.png"></div></a></div>
+        <div class="box"><a href = https://github.com/Mierley><div class = "white_star vkontakte"><img class = "icon" src="/Images/free-icon-vk-725349.png"></div></a></div>
 
     </div>
-
-
 </body>
+
+
+
+
 
 </html>
 
 
-<script>
-    var cursor = document.getElementById('cursor');
-    document.addEventListener('mousemove', function(e)
-    {
-        var x = e.clientX;
-        var y = e.clientY;
-        cursor.style.left = x + "px";
-        cursor.style.top= y + "px";
-    }) 
-</script>
-
-<script>
-   const dog_1 = document.getElementById("dog_1");
-
-   dog_1.addEventListener('click', fetchDog);
-
-   function fetchDog()
-   {
-       fetch('https://random.dog/woof.json').
-       then(j => j.json()).
-       then(d => {
-           if (d.url.includes('.mp4'))
-                fetchDog()
-           else
-                { dog_1.innerHTML = `<img src="${d.url}"  alt ="waithing.."/>` }
-       })
-   }
-</script>

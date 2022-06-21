@@ -1,12 +1,4 @@
-*{
-    cursor: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.container
+.dog_container
 {
     padding: 10px;
     margin-top:5%;
@@ -20,7 +12,6 @@
 .friend_layout
 {
     opacity: 100%;
-    display: flex;
 }
 .dog_place
 {
@@ -31,7 +22,6 @@
     height: 400px;
     width: 300px;
     background-color: #fff;;
-
 }
 
 .dog_place img

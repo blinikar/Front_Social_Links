@@ -1,0 +1,64 @@
+#link_container
+{
+    box-shadow: 0 0 30px 30px black;
+    padding: 10px;
+    margin-top:5%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    width: 420px;
+    height: 600px;
+    background-color: black;
+    text-align: center;
+}
+
+.white_star
+{
+    z-index: 8;
+    box-shadow: 0 0 55px 52px #fff;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    width: 55px;
+    background-color: aliceblue;
+    clip-path: polygon(50% 0%, 68% 26%, 98% 35%, 80% 61%, 79% 91%, 51% 83%, 21% 91%, 21% 61%, 2% 35%, 33% 27%);
+}
+
+.white_star:hover
+{
+    background-color: gold;
+    transform: scale(2);
+}
+
+.icon
+{
+    width: 25px;
+    height: 25px;
+    margin:auto;
+    display: block;
+}
+
+.git
+{
+    top: 60px;
+    left: 45px;
+}
+
+.vkontakte
+{
+    top: 220px;
+    left: 95px;
+}
+
+.instagram
+{
+    top: 420px;
+    left: 15px;
+}
+
+.telegram
+{
+    top: 320px;
+    left: 375px;
+}
